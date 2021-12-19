@@ -1,1 +1,1 @@
-Stay tuned. I am preparing something amazing !
+Stay tuned. Something amazing is coming soon !

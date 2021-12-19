@@ -20,6 +20,23 @@ const courses = [
     number: "CS 311",
   },
   {
+    title: "Server Side Web Development",
+    number: "CS 321",
+  },
+  {
+    title: "Mobile Application Development",
+    number: "CS 347",
+  },
+  {
+    title: "Object Oriented Design",
+    number: "CS 420",
+  },
+  {
+    title: "Artificial Intelligence and Robotics",
+    number: "CS 416",
+  },
+
+  {
     title: "Discrete Mathematics and Algorithms",
     number: "CS 204",
   },
@@ -56,6 +73,14 @@ const courses = [
   {
     title: "Web development",
     number: "CS 417",
+  },
+  {
+    title: "Design of Data Base Systems",
+    number: "CS 415",
+  },
+  {
+    title: "Discrete Modeling and Analysis",
+    number: "CS 400",
   },
 ];
 

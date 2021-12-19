@@ -63,7 +63,7 @@ const EmailLink = () => {
   return (
     <div
       className="textarea"
-      style={{ fontFamily: "Hanalei Fill", fontSize: 24 }}
+      style={{ fontFamily: "Hanalei Fill", fontSize: 22 }}
     >
       <span>{message}</span>
     </div>

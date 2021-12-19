@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 
 const divisor = 1000 * 60 * 60 * 24 * 365.2421897;
 const birthTime = new Date("1992-06-07T09:24:00");
+const dateWhenStartedCoding = new Date("2006-06-07T09:24:00");
 
 const Age = () => {
   const [age, setAge] = useState();
@@ -38,7 +39,7 @@ const Coding = () => {
   const [coding, setCoding] = useState();
   const tick = () => {
     setCoding(
-      (((Date.now() - birthTime) / divisor) * 365 * 10 * 60).toFixed(3)
+      (((Date.now() - dateWhenStartedCoding) / divisor) * 365 * 10).toFixed(3)
     );
   };
 
@@ -51,6 +52,23 @@ const Coding = () => {
   return <>{coding}</>;
 };
 
+const Debugging = () => {
+  const [debugging, setDebugging] = useState();
+  const tick = () => {
+    setDebugging(
+      (((Date.now() - dateWhenStartedCoding) / divisor) * 365 * 6).toFixed(2)
+    );
+  };
+
+  useEffect(() => {
+    const timer = setInterval(() => tick(), 4);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+  return <>{debugging}</>;
+};
+
 const data = [
   {
     key: "age",
@@ -59,39 +77,42 @@ const data = [
   },
   {
     key: "coding",
-    label: "Minutes spent coding",
+    label: "Hours spent coding",
     value: <Coding />,
+  },
+  {
+    key: "debugging",
+    label: "Hours spent debugging code",
+    value: <Debugging />,
   },
   {
     key: "timeSlept",
     label: "Hours Slept",
     value: <TimeSlept />,
   },
+
+  {
+    key: "location",
+    label: "Current city",
+    value: "Chicago, IL",
+  },
+  {
+    label: "Favorite book",
+    value: (
+      <a href="https://en.wikipedia.org/wiki/Papillon_(book)">
+        <button>See it here</button>
+      </a>
+    ),
+  },
   {
     key: "countries",
     label: "Countries visited",
     value: (
       <a href="https://www.google.com/maps/d/u/2/edit?mid=1qdMAwmzsl4e_JyVuC4dIOBhBEVAnOLBu&usp=sharing">
-        <button>See World Map</button>
+        <button>See Travel Map</button>
       </a>
     ),
   },
-  {
-    key: "location",
-    label: "Current city",
-    value: "Chicago",
-  },
-  {
-    label: "Lines of code powering this website",
-    value: "2115",
-    link: "https://github.com/constantinirimia/Personal-site/graphs/contributors",
-  },
 ];
-
-// Sleep - 26 years
-// Trying to fall asleep - 7 years
-// Time at work - 13 years
-// Exercising - 1 year and 4 months
-// coding
 
 export default data;
