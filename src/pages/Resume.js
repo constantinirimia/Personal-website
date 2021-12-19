@@ -12,16 +12,15 @@ import degrees from "../data/resume/degrees";
 import { skills, categories } from "../data/resume/skills";
 import Certifications from "../components/Resume/Certifications";
 
-const sections = ["Skills", "Certifications", "degrees", "Courses"];
+const sections = ["Skills", "Certifications", "Education", "courses"];
 
 const Resume = () => (
   <Main title="SKILLS" description="Constantin IRIMIA'">
     <article className="post" id="resume">
       <header>
         <div className="title">
-          <h2 data-testid="heading">
-            <Link to="resume">SKILLS</Link>
-          </h2>
+          <h2 data-testid="heading">SKILLS</h2>
+
           <div className="link-container">
             {sections.map((sec) => (
               <h4 key={sec}>
@@ -35,7 +34,6 @@ const Resume = () => (
       <Certifications />
       <Education data={degrees} />
       <Courses data={courses} />
-      lal
     </article>
   </Main>
 );

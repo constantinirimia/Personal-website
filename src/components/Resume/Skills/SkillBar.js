@@ -5,7 +5,6 @@ const SkillBar = ({ data, categories }) => {
 
   const buttonStyle = {
     width: 200,
-    color: "black",
   };
 
   return (
