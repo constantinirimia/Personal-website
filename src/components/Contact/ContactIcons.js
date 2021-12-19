@@ -9,7 +9,7 @@ const ContactIcons = () => (
     {data.map((s) => (
       <li key={s.label}>
         <a href={s.link}>
-          <FontAwesomeIcon icon={s.icon} />
+          <FontAwesomeIcon icon={s.icon} size="lg" />
         </a>
       </li>
     ))}

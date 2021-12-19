@@ -1,23 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const messages = [
-  "Hi",
-  "Hello",
-  "Hola",
-  "Buna ziua",
-  "Ni hao ma",
-  "Welcome to my page",
-  "You can contact me to ask me anything!",
-  "Really !!!",
-  "Well, not really anything. But most things",
-  "You can ask me for example... ",
-  "what is the shortest path from any given node to each node in a connected graph",
-  "or how to reverse a linked list",
-  "or what is my favorite travel destination so far",
-  "You get the idea",
-  "I am here waiting for your message",
-  "Talk to you soon",
-  "Thanks",
+  "Hello Hello and Welcome to my page !",
+  "I am Constantin. I am a software engineer and I geek on anyhing " +
+    "about Artificial Intelligence or Machine Learning. If you have " +
+    "some cool ideas about any projects where we can work together " +
+    "you can contact me anytime. Also feel free to ask me anything ! " +
+    "Really ! ... Well, not really anything. But most things. " +
+    "You can ask me for example... what is my favorite searching algorithm " +
+    " or how to create an artificial neural network to predict stock market prices. " +
+    "You get the idea ! ",
+  "Feel free to click on any of these icons below to connect with me and start networking !",
+  "Talk to you soon ! Thanks !",
 ];
 
 const useInterval = (callback, delay) => {
@@ -39,8 +33,8 @@ const useInterval = (callback, delay) => {
 };
 
 const EmailLink = () => {
-  const hold = 25;
-  const delay = 40;
+  const hold = 60;
+  const delay = 45;
 
   const [idx, updateIter] = useState(0); // points to current message
   const [message, updateMessage] = useState(messages[idx]);
@@ -68,10 +62,8 @@ const EmailLink = () => {
 
   return (
     <div
-      className="inline-container"
-      style={{ fontFamily: "Hanalei Fill", fontSize: 20 }}
-      onMouseEnter={() => setIsActive(false)}
-      onMouseLeave={() => idx < messages.length && setIsActive(true)}
+      className="textarea"
+      style={{ fontFamily: "Hanalei Fill", fontSize: 24 }}
     >
       <span>{message}</span>
     </div>
