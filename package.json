@@ -1,10 +1,15 @@
 {
-  "name": "personal-site",
+  "name": "Personal-website",
   "version": "3.0.1",
-  "homepage": "https://constantinirimia.github.io/Personal-website",
+  "homepage": "https://constantinirimia.com/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/constantinirimia/Personal-website.git"
+  },
   "scripts": {
-    "build": "react-scripts build",
-    "predeploy": "npm run build",
+    "build": "rimraf ./build && react-scripts build",
+    "predeploy": "npm run build && react-snap",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "lint": "eslint src",
