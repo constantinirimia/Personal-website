@@ -1,9 +1,5 @@
 # Intro
 
-test 1
-
-test new test
-
 Hi! I am Constantin! I like building things that have a positive impact to all of us. I am interested in projects that involve machine learning and artificial intelligence as I believe sooner than later we will get to the point where these will improve drastically our lives. Please feel free to get in touch to discuss any ideas on how we could change the world for the better through coding.
 
 # What do I like
