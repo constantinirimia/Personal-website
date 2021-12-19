@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import ContactIcons from '../Contact/ContactIcons';
+import ContactIcons from "../Contact/ContactIcons";
 
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
@@ -11,33 +11,41 @@ const SideBar = () => (
       <Link to="/" className="logo">
         <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
       </Link>
+
       <header>
         <h2>Constantin Irimia</h2>
-        <p><a href="mailto:cirimia100@gmail.com">cirimia100@gmail.com</a></p>
+        <p>Full stack Software engineer </p>
       </header>
     </section>
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Constantin. I like building things.
-        I am a <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC Alumni, and
-        the co-founder and CTO of <a href="https://arthena.com">Arthena</a>. Before Arthena I was
-        at <a href="https://matroid.com">Matroid</a>
-        , <a href="https://planet.com">Planet</a>
-        , <a href="https://planetaryresources.com">Planetary Resources</a>
-        , <a href="https://facebook.com">Facebook</a>
-        , and <a href="https://seds.org">SEDS</a>.
+      <p>
+        Hi, I&apos;m Constantin. I am a software engineer who loves building
+        things. I love coding and I am passionate about Machine Learning and
+        Articial Intelligence and finding ways on how I can use these to improve
+        our lives.{" "}
       </p>
       <ul className="actions">
         <li>
-          {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
+          {!window.location.pathname.includes("/skills") ? (
+            <Link to="/skills" className="button">
+              Learn More
+            </Link>
+          ) : (
+            <Link to="/about" className="button">
+              About Me
+            </Link>
+          )}
         </li>
       </ul>
     </section>
 
     <section id="footer">
       <ContactIcons />
-      <p className="copyright">&copy; Constantin Irimia <Link to="/">mldIrimia.com</Link>.</p>
+      <p className="copyright">
+        &copy; Constantin Irimia <Link to="/">cirimia100@gmail.com</Link>.
+      </p>
     </section>
   </section>
 );

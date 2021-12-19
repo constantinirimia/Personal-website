@@ -59,7 +59,7 @@ const data = [
   },
   {
     key: "coding",
-    label: "Minutes Coding",
+    label: "Minutes spent coding",
     value: <Coding />,
   },
   {
@@ -72,19 +72,19 @@ const data = [
     label: "Countries visited",
     value: (
       <a href="https://www.google.com/maps/d/u/2/edit?mid=1qdMAwmzsl4e_JyVuC4dIOBhBEVAnOLBu&usp=sharing">
-        <Button variant="primary" size="sm" color="#ff5c5c">
-          {" "}
-          11 - see on World Map{" "}
-        </Button>
+        <button>See World Map</button>
       </a>
     ),
-
-    link: "https://www.google.com/maps/d/u/2/edit?mid=1qdMAwmzsl4e_JyVuC4dIOBhBEVAnOLBu&usp=sharing",
   },
   {
     key: "location",
     label: "Current city",
     value: "Chicago",
+  },
+  {
+    label: "Lines of code powering this website",
+    value: "2115",
+    link: "https://github.com/constantinirimia/Personal-site/graphs/contributors",
   },
 ];
 

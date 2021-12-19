@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
 import Main from "../layouts/Main";
 import EmailLink from "../components/Contact/EmailLink";
 import ContactIcons from "../components/Contact/ContactIcons";
@@ -14,14 +12,12 @@ const Contact = () => (
       <header>
         <div className="title">
           <h2 data-testid="heading">
-            <Link to="/contact">Contact</Link>
+            <a href={"mailto:cirimia100@gmail.com"}>Contact</a>
           </h2>
         </div>
       </header>
       <div className="email-at">
-        <h1 style={{ fontSize: 20 }}>
-          <a href={"mailto:cirimia100@gmail.com"}>Constantin Irimia</a>
-        </h1>
+        <h1 style={{ fontSize: 20 }}></h1>
         <EmailLink />
       </div>
       <ContactIcons />

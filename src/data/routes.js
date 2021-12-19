@@ -1,28 +1,28 @@
 const routes = [
   {
     index: true,
-    label: "Constantin IRIMIA",
-    path: '/',
+    label: "Constantin Irimia",
+    path: "/",
   },
   {
-    label: 'About',
-    path: '/about',
+    label: "About",
+    path: "/about",
   },
   {
-    label: 'Resume',
-    path: '/resume',
+    label: "Skills",
+    path: "/skills",
   },
   {
-    label: 'Projects',
-    path: '/projects',
+    label: "Statistics",
+    path: "/stats",
   },
   {
-    label: 'Stats',
-    path: '/stats',
+    label: "Blog",
+    path: "/blog",
   },
   {
-    label: 'Contact',
-    path: '/contact',
+    label: "Contact",
+    path: "/contact",
   },
 ];
 

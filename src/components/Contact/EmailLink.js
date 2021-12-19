@@ -39,8 +39,8 @@ const useInterval = (callback, delay) => {
 };
 
 const EmailLink = () => {
-  const hold = 50;
-  const delay = 50;
+  const hold = 25;
+  const delay = 40;
 
   const [idx, updateIter] = useState(0); // points to current message
   const [message, updateMessage] = useState(messages[idx]);
