@@ -18,7 +18,7 @@ const About = () => (
       <header>
         <div className="title">
           <h2 data-testid="heading">About me</h2>
-          <p>Software engineer, World explorer and higher purpose seeker.</p>
+          <h3>Software engineer, World explorer and Higher-purpose seeker.</h3>
         </div>
       </header>
 

@@ -64,6 +64,7 @@ b {
 em,
 i {
   font-style: italic;
+  font-size: 20;
 }
 
 p {
@@ -91,11 +92,14 @@ h6 {
 }
 
 h2 {
-  font-size: 1.1em;
+  font-size: 1.9em;
+  letter-spacing: 3.5px;
+  color: rgb(73, 67, 67);
 }
 
 h3 {
   font-size: 0.9em;
+  letter-spacing: 3px;
 }
 
 h4 {
@@ -103,7 +107,12 @@ h4 {
 }
 
 h5 {
-  font-size: 0.7em;
+  font-size: 0.95em;
+  text-transform: none;
+  font-weight: normal;
+  font-family: "Verdana";
+  color: rgb(92, 86, 86);
+  letter-spacing: 1px;
 }
 
 h6 {

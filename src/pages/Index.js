@@ -1,3 +1,4 @@
+import { width } from "@fortawesome/free-brands-svg-icons/faGithub";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -8,26 +9,56 @@ const Index = () => (
     <article className="post" id="index">
       <header>
         <div className="title">
-          <h2 data-testid="heading">
-            <Link to="/">Welcome !</Link>
-          </h2>
+          <div className="post">
+            <h2 data-testid="heading">
+              <Link to="/">I build things that live on the internet !</Link>
+            </h2>
+          </div>
         </div>
       </header>
-      <p>
-        {" "}
-        Welcome to my website. Please feel free to read more
-        <Link to="/about"> about me.</Link>
+      <h5>
+        Welcome to my website !<br></br>If you are curious to find out more
+        about me, you are in the right place.{" "}
+        <button>
+          <a
+            href="https://constantinirimia.com/about"
+            onclick="location.href='https://constantinirimia.com/about';"
+          >
+            {""}
+            Find out more{" "}
+          </a>
+        </button>
+      </h5>
+      <h5>
+        <br></br>I geek on topics that include Machine learning, Artificial
+        intelligence and Blockchain and everyday, I am building things that
+        improve our world for better. You can take a look at my skills, and see
+        in which way I can be helpful to you.
+        <button>
+          <a
+            href="https://constantinirimia.com/skills"
+            onclick="location.href='https://constantinirimia.com/skills';"
+          >
+            {""}
+            See my skills{" "}
+          </a>
+        </button>
+      </h5>
+      <h5>
         <br></br>
-        You can take a<Link to="/skills"> look at my skills, </Link>to see if I
-        may be in anyhow helpful to you, or you can read{" "}
-        <Link to="stats"> some fun statistics </Link>
-        about me.
-        <br></br>
-        If you feel that you have any ideas on how we can use algorithms and
-        coding to make even a small change for the better to our society, please
-        feel free to
-        <Link to="/contact"> get in touch with me</Link>
-      </p>
+        If you have some cool ideas about interesting projects and want to see
+        if we can work together to create something amazing, feel free to get in
+        touch with me at anytime.
+        <button>
+          <a
+            href="https://constantinirimia.com/contact"
+            onclick="location.href='https://constantinirimia.com/contact';"
+          >
+            {""}
+            Contact me{" "}
+          </a>
+        </button>
+      </h5>
     </article>
   </Main>
 );

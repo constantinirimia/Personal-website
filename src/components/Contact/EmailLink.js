@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 const messages = [
   "Hello Hello and Welcome to my page !",
   "I am Constantin. I am a software engineer and I geek on anyhing " +
-    "about Artificial Intelligence or Machine Learning. If you have " +
+    "about Artificial Intelligence, Machine Learning or Blockchain. If you have " +
     "some cool ideas about any projects where we can work together " +
     "you can contact me anytime. Also feel free to ask me anything ! " +
     "Really ! ... Well, not really anything. But most things. " +

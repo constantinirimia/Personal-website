@@ -14,7 +14,7 @@ const SideBar = () => (
 
       <header>
         <h2>Constantin Irimia</h2>
-        <p>Full Stack Software Engineer </p>
+        <h3>Full Stack Software Engineer </h3>
       </header>
     </section>
 
