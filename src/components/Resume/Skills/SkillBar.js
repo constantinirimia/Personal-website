@@ -9,7 +9,7 @@ const SkillBar = ({ data, categories }) => {
 
   return (
     <div
-      className="button"
+      className="box"
       contentEditable="false"
       color="red"
       style={buttonStyle}

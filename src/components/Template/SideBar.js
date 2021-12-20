@@ -14,17 +14,17 @@ const SideBar = () => (
 
       <header>
         <h2>Constantin Irimia</h2>
-        <p>Full stack Software engineer </p>
+        <p>Full Stack Software Engineer </p>
       </header>
     </section>
 
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m Constantin. I am a software engineer who loves building
-        things. I love coding and I am passionate about Machine Learning and
-        Articial Intelligence and finding ways on how I can use these to improve
-        our lives.{" "}
+        I&apos;m a software engineer who loves building things by writing code.
+        I am passionate about machine learning and artificial intelligence and
+        how I can use these to create a positive impact to everything that
+        surrounds us.{" "}
       </p>
       <ul className="actions">
         <li>

@@ -75,7 +75,6 @@
   margin: 2em 0;
   .title {
     text-align: center;
-    color: red;
   }
   .degree {
     text-align: center;
@@ -113,6 +112,7 @@
 }
 
 .courses .course-number {
+  font-family: "Times New Roman";
   display: inline;
 }
 .courses .course-name {
