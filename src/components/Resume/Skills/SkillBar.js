@@ -11,7 +11,6 @@ const SkillBar = ({ data, categories }) => {
     <div
       className="box"
       contentEditable="false"
-      color="red"
       style={buttonStyle}
       disabled="true"
     >

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const messages = [
-  "Hello Hello and Welcome to my page !",
+  "Hi! ",
   "I am Constantin. I am a software engineer and I geek on anything " +
     "about Artificial Intelligence, Machine Learning or Blockchain. If you have " +
     "some cool ideas about any projects where we can work together " +

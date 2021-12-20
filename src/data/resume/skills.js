@@ -171,7 +171,7 @@ const skills = [
   {
     title: "Typescript",
 
-    category: ["Web Development", "Languages"],
+    category: ["Web Development", "Languages", "Frontend"],
   },
   {
     title: "HTML + CSS",
