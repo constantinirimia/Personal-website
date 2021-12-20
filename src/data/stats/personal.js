@@ -85,11 +85,6 @@ const data = [
     label: "Hours spent debugging code",
     value: <Debugging />,
   },
-  {
-    key: "timeSlept",
-    label: "Hours Slept",
-    value: <TimeSlept />,
-  },
 
   {
     key: "location",

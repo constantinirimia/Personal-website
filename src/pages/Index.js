@@ -18,7 +18,7 @@ const Index = () => (
       </header>
       <h5>
         Welcome to my website !<br></br>If you are curious to find out more
-        about me, you are in the right place.{" "}
+        about me, you are in the right place{" "}
         <button>
           <a
             href="https://constantinirimia.com/about"
@@ -32,8 +32,8 @@ const Index = () => (
       <h5>
         <br></br>I geek on topics that include Machine learning, Artificial
         intelligence and Blockchain and everyday, I am building things that
-        improve our world for better. You can take a look at my skills, and see
-        in which way I can be helpful to you.
+        change our world for the better. You can take a look at my skills and
+        see how I can be helpful to you{" "}
         <button>
           <a
             href="https://constantinirimia.com/skills"
@@ -46,9 +46,9 @@ const Index = () => (
       </h5>
       <h5>
         <br></br>
-        If you have some cool ideas about interesting projects and want to see
-        if we can work together to create something amazing, feel free to get in
-        touch with me at anytime.
+        If you have some cool ideas about any interesting projects and want to
+        see how we can work together to create something amazing, feel free to
+        get in touch with me at anytime{" "}
         <button>
           <a
             href="https://constantinirimia.com/contact"

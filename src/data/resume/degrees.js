@@ -5,7 +5,7 @@ const degrees = [
   },
   {
     school: "Hyperion University",
-    degree: "Journalism",
+    degree: "B.A. Journalism",
   },
 ];
 

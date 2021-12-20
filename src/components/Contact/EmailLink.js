@@ -2,16 +2,16 @@ import React, { useState, useEffect, useRef } from "react";
 
 const messages = [
   "Hello Hello and Welcome to my page !",
-  "I am Constantin. I am a software engineer and I geek on anyhing " +
+  "I am Constantin. I am a software engineer and I geek on anything " +
     "about Artificial Intelligence, Machine Learning or Blockchain. If you have " +
     "some cool ideas about any projects where we can work together " +
-    "you can contact me anytime. Also feel free to ask me anything ! " +
-    "Really ! ... Well, not really anything. But most things. " +
+    "you can contact me anytime. Also feel free to ask me anything! " +
+    "Really! ... Well, not really anything. But most things. " +
     "You can ask me for example... what is my favorite searching algorithm " +
     " or how to create an artificial neural network to predict stock market prices. " +
-    "You get the idea ! ",
-  "Feel free to click on any of these icons below to connect with me and start networking !",
-  "Talk to you soon ! Thanks !",
+    "You get the idea! ",
+  "Feel free to click on any of these icons below to connect with me and start networking!",
+  "Talk to you soon!  Thanks !",
 ];
 
 const useInterval = (callback, delay) => {
@@ -63,7 +63,7 @@ const EmailLink = () => {
   return (
     <div
       className="textarea"
-      style={{ fontFamily: "Hanalei Fill", fontSize: 22 }}
+      style={{ fontFamily: "Hanalei Fill", fontSize: 20 }}
     >
       <span>{message}</span>
     </div>

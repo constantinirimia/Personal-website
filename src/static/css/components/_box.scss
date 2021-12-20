@@ -10,19 +10,19 @@
       "color #{_duration(transition)} ease"
     )
   );
-  background-color: transparent;
+  background-color: white;
   border: 0;
   box-shadow: inset 0 0 0 6px _palette(border);
-  color: _palette(fg-bold) !important;
+  color: black;
   cursor: cursor;
   display: inline-block;
-  font-family: _font(family-heading);
+  font-family: "Verdana";
   font-size: 0.6em;
   font-weight: _font(weight-heading-bold);
-  height: _size(element-height) * 1.75;
-  letter-spacing: _font(kerning-heading);
+  height: _size(element-height) * 1.9;
+  letter-spacing: 0.8px;
   line-height: _size(element-height) * 1.75;
-  padding: 0 2.5em;
+  padding: 0 5.5em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
