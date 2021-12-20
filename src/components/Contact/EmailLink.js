@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const messages = [
-  "Hi! ",
-  "I am Constantin. I am a software engineer and I geek on anything " +
+  "",
+  "Hi, I am Constantin. I am a software engineer and I geek on anything " +
     "about Artificial Intelligence, Machine Learning or Blockchain. If you have " +
     "some cool ideas about any projects where we can work together " +
     "you can contact me anytime. Also feel free to ask me anything! " +
@@ -33,7 +33,7 @@ const useInterval = (callback, delay) => {
 };
 
 const EmailLink = () => {
-  const hold = 60;
+  const hold = 1;
   const delay = 45;
 
   const [idx, updateIter] = useState(0); // points to current message
