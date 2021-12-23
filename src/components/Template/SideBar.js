@@ -23,7 +23,7 @@ const SideBar = () => (
       <p>
         Full stack software engineer who loves building things by writing code.
         Passionate about machine learning and artificial intelligence and how
-        these can be used to create a positive impact to everything that
+        techonology can be used to create a positive impact to everything that
         surrounds us.{" "}
       </p>
       <ul className="actions">
