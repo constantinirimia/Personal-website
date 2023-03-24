@@ -178,7 +178,6 @@ const skills = [
 
     category: ["Web Development", "Languages"],
   },
-
   {
     title: "Pandas",
 

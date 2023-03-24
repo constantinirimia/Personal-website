@@ -21,10 +21,9 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Full stack software engineer who loves building things by writing code.
-        Passionate about machine learning and artificial intelligence and how
-        techonology can be used to create a positive impact to everything that
-        surrounds us.{" "}
+        Constantin Irimia is a senior software engineer with a proven track
+        record of delivering impactful projects for top US tech and financial
+        companies using the latest technologies.{" "}
       </p>
       <ul className="actions">
         <li>

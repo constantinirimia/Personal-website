@@ -2,16 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 
 const messages = [
   "",
-  "Hi, I am Constantin. I am a software engineer and I geek on anything " +
-    "about Artificial Intelligence, Machine Learning or Blockchain. If you have " +
-    "some cool ideas about any projects where we can work together " +
-    "you can contact me anytime. Also feel free to ask me anything! " +
-    "Really! ... Well, not really anything. But most things. " +
-    "You can ask me for example... what is my favorite searching algorithm " +
-    " or how to create an artificial neural network to predict stock market prices. " +
-    "You get the idea! ",
-  "Feel free to click on any of these icons below to connect with me and start networking!",
-  "Talk to you soon!  Thanks !",
+  "Hi, I am Constantin! I am a software engineer with a deep passion for " +
+    "Artificial Intelligence and Machine Learning. I'm always on the lookout for " +
+    "exciting new ideas to collaborate on, so if you have any, " +
+    "please don't hesitate to get in touch with me. I'm open to discussing anything " +
+    "related to my areas of expertise, and I'm always happy to help in any way I can. " +
+    "Feel free to click on any of these icons below to connect with me and start networking! " +
+    "Talk to you soon! ",
 ];
 
 const useInterval = (callback, delay) => {
@@ -34,7 +31,7 @@ const useInterval = (callback, delay) => {
 
 const EmailLink = () => {
   const hold = 1;
-  const delay = 45;
+  const delay = 13;
 
   const [idx, updateIter] = useState(0); // points to current message
   const [message, updateMessage] = useState(messages[idx]);

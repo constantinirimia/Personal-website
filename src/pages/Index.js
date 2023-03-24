@@ -30,10 +30,11 @@ const Index = () => (
         </button>
       </h5>
       <h5>
-        <br></br>I geek on topics that include Machine learning, Artificial
-        intelligence and Blockchain and everyday I am building things that could
-        change our world for the better. You can take a look at my skills and
-        see how I can be helpful to you.{" "}
+        <br></br>I'm a senior software engineer with a passion for creating
+        scalable software architecture involving the use of AI and machine
+        learning. I'm dedicated to staying on the cutting edge of this exciting
+        field, constantly learning and experimenting with new tools and
+        techniques to create software that truly makes a difference.{" "}
         <button>
           <a
             href="https://constantinirimia.com/skills"
@@ -46,9 +47,9 @@ const Index = () => (
       </h5>
       <h5>
         <br></br>
-        If you have any ideas about interesting projects and want to see how we
-        can work together to create something amazing, feel free to get in touch
-        with me at anytime!{" "}
+        If you have any exciting project ideas and are interested in
+        collaborating to create something amazing, don't hesitate to contact me
+        anytime!{" "}
         <button>
           <a
             href="https://constantinirimia.com/contact"

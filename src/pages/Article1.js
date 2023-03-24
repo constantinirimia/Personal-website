@@ -12,16 +12,14 @@ const count = markdown
   .map((s) => s.replace(/\W/g, ""))
   .filter((s) => s.length).length;
 
-const About = () => (
+const Article1 = () => (
   <Main title="About" description="Learn about Constantin Irimia">
     <article className="post markdown" id="about">
       <header>
         <div className="title">
           <h2 data-testid="heading">About me</h2>
           <h3>
-            Software engineer, world explorer, and higher-purpose seeker -
-            constantly seeking new ways to innovate, create, and contribute to
-            the world.
+            Software engineer, World explorer and Higher-purpose seeker lala.
           </h3>
         </div>
       </header>
@@ -31,4 +29,4 @@ const About = () => (
   </Main>
 );
 
-export default About;
+export default Article1;
