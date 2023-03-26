@@ -22,7 +22,10 @@ const App = () => (
       <Routes>
         <Route exact path="/" element={<Index />} />
         <Route path="/about" element={<About />} />
-        <Route path="/blog/blogpost1" element={<BlogPost1 />} />
+        <Route
+          path="/blog/what-is-nlp-and-how-it-is-useful-to-us"
+          element={<BlogPost1 />}
+        />
         <Route path="/stats" element={<Stats />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/skills" element={<Resume />} />

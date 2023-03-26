@@ -11,6 +11,7 @@ const blogPost1 = raw("../data/blogArticles/article1.md");
 const BlogPreview = ({ title, description, preview, link }) => (
   <article className="post markdown">
     <ReactMarkdown>{preview}</ReactMarkdown>
+    <br></br>
     <p>
       <Button>
         {" "}
@@ -28,7 +29,10 @@ const Blog = () => (
           <h2>BLOG</h2>
         </div>
       </header>
-      <BlogPreview preview={blogPost1.slice(0, 300)} link="/blog/blogpost1" />
+      <BlogPreview
+        preview={blogPost1.slice(0, 300)}
+        link="/blog/what-is-nlp-and-how-it-is-useful-to-us"
+      />
     </article>
   </Main>
 );

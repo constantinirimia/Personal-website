@@ -11,6 +11,7 @@ const Article1 = () => (
   <Main title="Article1" description="Learn about Constantin Irimia">
     <article className="post markdown" id="article1">
       <ReactMarkdown>{article_1}</ReactMarkdown>
+      <p></p>
       <Button>
         <Link to="/blog">Back to Blog</Link>
       </Button>
