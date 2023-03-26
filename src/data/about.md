@@ -8,7 +8,8 @@ I am passionate about projects that leverage the power of machine learning and a
 &nbsp;
 \
 &nbsp;
-I'm a passionate traveler, always seeking out new countries and destinations to explore. If you're curious about where I've been so far, feel free to check out this map that charts my wanderings across the globe here[this map](https://www.google.com/maps/d/u/2/edit?mid=1qdMAwmzsl4e_JyVuC4dIOBhBEVAnOLBu&ll=22.96412624055243%2C-64.83993735000001&z=3)
+I'm a passionate traveler, always seeking out new countries and destinations to explore. If you're curious about where I've been so far, feel free to check out this map that charts my wanderings across the globe here
+[**Map**](https://www.google.com/maps/d/u/2/edit?mid=1qdMAwmzsl4e_JyVuC4dIOBhBEVAnOLBu&ll=22.96412624055243%2C-64.83993735000001&z=3)
 
 ---
 
