@@ -1,39 +1,5 @@
-# Header This is an article 1
+# This is an article 1
 
-This is the body of article 1 here.
+Check your internet speed in under 30 seconds. The speed test usually transfers less than 40 MB of data, but may transfer more data on fast connections.
 
-In this example, we added two constants firstArticleExcerpt and secondArticleExcerpt, which are excerpts or summaries of the articles. We then displayed them using ReactMarkdown, and added a "Read more" link at the end of each excerpt. You can adjust the length of the excerpt by changing the second parameter of the substring method.
-
-Regenerate response
-
-ChatGPT Mar 14 Version. Free Research Preview. Our goal is to make AI systems more natural and safe to interact with. Your feedback will help us improve.
-New chat
-New chat
-
-React code for blog.
-Stats for Software Engineers.
-Title: Request for Improvement
-Pleasant Hosting Experience.
-SKY 1 BR Apartment
-Welcome Message from Host.
-Base64 String Error.
-ZVA API Syntax Error.
-TF optimized with oneDNN.
-TensorFlow in Conda.
-Voice Main Request.
-Skills and Collaboration Request.
-Angular for Personal Websites
-Contiguous Substrings Choices.
-API Connection Timeout Error.
-Flight booking assistance.
-Flight Info Questions.
-SQL syntax error correction.
-Passing Request Body Between APIs
-
-Show more
-Clear conversations
-Upgrade to Plus
-NEW
-Dark mode
-Updates & FAQ
-Log out
+To run the test, you'll be connected to Measurement Lab (M-Lab) and your IP address will be shared with them and processed by them in accordance with their privacy policy. M-Lab conducts the test and publicly publishes all test results to promote internet research. Published information includes your IP address and test results, but doesn’t include any other information about you as an internet user.

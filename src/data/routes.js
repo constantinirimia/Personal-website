@@ -17,12 +17,12 @@ const routes = [
     path: "/stats",
   },
   {
-    label: "Contact",
-    path: "/contact",
+    label: "Blog",
+    path: "/blog",
   },
   {
-    label: "BLOG",
-    path: "/blog",
+    label: "Contact",
+    path: "/contact",
   },
 ];
 
