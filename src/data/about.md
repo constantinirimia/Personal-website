@@ -12,8 +12,6 @@ I'm a passionate traveler, always seeking out new countries and destinations to 
 
 ---
 
----
-
 **Things that I dream of**
 \
 &nbsp;
@@ -28,7 +26,5 @@ Some of my goals include:
 - Pursuing a path of continuous self-improvement and lifelong learning.
 - Developing software with the highest level of quality and reliability, free of bugs and errors.
 - Seeking solutions to complex computational problems, including the challenging class of Non-deterministic polynomial time problems.
-
----
 
 ---

@@ -1,35 +1,56 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import raw from "raw.macro";
 
 import Main from "../layouts/Main";
-import { render } from "ejs";
-import { className } from "postcss-selector-parser";
+const firstArticle = raw("../data/blogArticles/article1.md");
+const secondArticle = raw("../data/blogArticles/article2.md");
 
-const article1 = raw("../data/articles/article2.md");
-
-//const title = article1.split("\n")[0];
-
-const count = article1
-  .split(/\s+/)
-  .map((s) => s.replace(/\W/g, ""))
-  .filter((s) => s.length).length;
-
-const About = () => (
-  <Main title="About" description="Learn about Constantin Irimia">
-    <article className="post markdown" id="about">
-      <header>
-        <div className="title">
-          <h2 data-testid="heading">About me</h2>
-          <h2> title </h2>
-          <h3>Software engineer, World explorer and Higher-purpose seeker.</h3>
-        </div>
-      </header>
-
-      <ReactMarkdown>{article1}</ReactMarkdown>
+const Article1 = () => (
+  <Main title="Article 1" description="Learn about Article 1">
+    <article className="post markdown" id="blog">
+      <ReactMarkdown>{firstArticle}</ReactMarkdown>
+      <p>
+        <Link to="/">Back to Blog</Link>
+      </p>
     </article>
   </Main>
 );
 
-export default About;
+const Article2 = () => (
+  <Main title="Article 2" description="Learn about Article 2">
+    <article className="post markdown" id="blog">
+      <ReactMarkdown>{secondArticle}</ReactMarkdown>
+      <p>
+        <Link to="/">Back to Blog</Link>
+      </p>
+    </article>
+  </Main>
+);
+
+const Blog = () => (
+  <Main title="About" description="Learn about Constantin Irimia">
+    <article className="post markdown" id="blog">
+      <header>
+        <div className="title">
+          <h2 data-testid="heading">BLOG</h2>
+
+          <p>
+            <Link to="/article1">Article 1</Link>
+          </p>
+          <p>
+            <Link to="/article2">Article 2</Link>
+          </p>
+        </div>
+      </header>
+
+      {
+        // /* <Route path="/article1" component={Article1} />
+        <Route path="/article2" component={Article2} />
+      }
+    </article>
+  </Main>
+);
+
+export default Blog;
