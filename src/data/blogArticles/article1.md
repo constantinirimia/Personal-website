@@ -6,7 +6,7 @@ We will look at various applications in this field and hope to get you excited a
 &nbsp;
 \
 &nbsp;
-We are still far from perfect intelligence (even defining perfect intelligence is very hard as we could encounter different ethical, and moral, issues) but in this blog post, we will look through an optimistical point of view and appreciate the progress so far.
+We are still far from perfect intelligence (even defining perfect intelligence is very hard as we could encounter different ethical and moral issues) but in this blog post, we will look through an optimistical point of view and appreciate the progress so far.
 \
 &nbsp;
 \
