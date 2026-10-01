@@ -2,8 +2,9 @@
 
 .post {
   @include padding(_size(section-spacing), _size(section-spacing));
-  background: _palette(bg);
+  background: rgba(13, 19, 26, 0.88);
   border: solid 1px _palette(border);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
   margin: 0 0 _size(section-spacing) 0;
   position: relative;
 
@@ -24,6 +25,18 @@
       h2 {
         font-weight: _font(weight-heading-extrabold);
         font-size: 1.5em;
+      }
+
+      .prompt {
+        font-family: _font(family-fixed);
+        text-transform: none !important;
+        letter-spacing: 0.08em;
+        color: _palette(accent);
+        margin: 0 0 0.6em;
+      }
+
+      p {
+        text-transform: none;
       }
 
       > :last-child {

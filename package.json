@@ -25,7 +25,6 @@
     "dayjs": "^1.10.7",
     "markdown": "^0.5.0",
     "marked": "^4.0.7",
-    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "raw.macro": "^0.4.2",
     "react": "^17.0.2",
@@ -40,7 +39,8 @@
     "react-scripts": "^4.0.3",
     "react-snap": "^1.23.0",
     "react-sticky": "^6.0.3",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "sass": "^1.77.8"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",

@@ -16,39 +16,33 @@ button,
   );
   background-color: transparent;
   border: 0;
-  box-shadow: inset 0 0 0 2px rgb(146, 173, 247);
-  color: blue;
-  cursor: cursor;
+  box-shadow: inset 0 0 0 1px _palette(accent);
+  color: _palette(accent);
+  cursor: pointer;
   display: inline-block;
-  font-family: _font(family-heading);
-  font-size: 0.6em;
-  font-weight: _font(weight-heading-bold);
-  height: _size(element-height) * 1.75;
-  letter-spacing: 1.5px;
-  line-height: _size(element-height) * 1.75;
-  padding: 0 2.5em;
+  font-family: _font(family-fixed);
+  font-size: 0.72em;
+  font-weight: 500;
+  height: auto;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  padding: 0.85em 1.4em;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   white-space: nowrap;
 
   &:hover {
-    box-shadow: inset 0 0 0 1px _palette(accent);
-    color: _palette(accent) !important;
-
-    &:active {
-      background-color: transparentize(_palette(accent), 0.95);
-    }
+    background-color: rgba(93, 255, 176, 0.12);
+    box-shadow: inset 0 0 0 1px lighten(_palette(accent), 8%),
+      0 0 18px rgba(93, 255, 176, 0.2);
+    color: lighten(_palette(accent), 8%) !important;
   }
 
   &:before,
   &:after {
     color: _palette(fg-light);
     position: relative;
-  }
-
-  &:mine {
-    background-color: red;
   }
 
   &:before {
@@ -68,12 +62,12 @@ button,
   }
 
   &.big {
-    font-size: 0.7em;
-    padding: 0 3em;
+    font-size: 0.8em;
+    padding: 1em 1.8em;
   }
 
   &.small {
-    font-size: 0.5em;
+    font-size: 0.65em;
   }
 
   &.disabled,

@@ -13,7 +13,9 @@ body {
 #header {
   @include vendor("display", "flex");
   @include vendor("justify-content", "space-between");
-  background-color: _palette(bg);
+  @include vendor("align-items", "center");
+  background-color: rgba(8, 12, 16, 0.92);
+  backdrop-filter: blur(12px);
   border-bottom: solid 1px _palette(border);
   height: 3.5em;
   left: 0;
@@ -24,7 +26,7 @@ body {
   z-index: _misc(z-index-base);
 
   a {
-    color: black;
+    color: _palette(fg-bold);
     text-decoration: none;
   }
 
@@ -74,11 +76,16 @@ body {
 
         a {
           border-bottom: 0;
-          font-family: _font(family-heading);
-          font-size: 0.8em;
-          font-weight: _font(weight-heading);
-          letter-spacing: _font(kerning-heading);
-          text-transform: uppercase;
+          font-family: _font(family-fixed);
+          font-size: 0.72em;
+          font-weight: 500;
+          letter-spacing: 0.12em;
+          text-transform: lowercase;
+          color: _palette(fg);
+
+          &.is-active {
+            color: _palette(accent);
+          }
         }
       }
     }
@@ -182,20 +189,66 @@ body {
 
 /* General sidebar styles */
 .bm-menu {
-  background: _palette(bg);
+  background: #0c1218;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  border-left: 1px solid _palette(border);
 }
 
 /* Wrapper for item list */
 .bm-item-list {
   color: _palette(fg-bold);
   padding: 0.8em;
-  font-family: "Raleway", Helvetica, sans-serif;
+  font-family: _font(family-fixed);
 }
 
 #header .index-link {
   z-index: 3;
+
+  a {
+    font-family: _font(family-fixed);
+    letter-spacing: 0.08em;
+    text-transform: none;
+  }
+}
+
+#header .status-clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-right: 1.25em;
+  font-family: _font(family-fixed);
+  font-size: 0.68em;
+  letter-spacing: 0.14em;
+  color: _palette(accent);
+  white-space: nowrap;
+}
+
+.status-clock__pulse {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: _palette(accent);
+  box-shadow: 0 0 8px _palette(accent);
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@include breakpoint(medium) {
+  #header .status-clock {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-clock__pulse {
+    animation: none;
+  }
 }
 
 #header .main .menu {

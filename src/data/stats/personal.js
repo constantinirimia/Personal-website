@@ -169,7 +169,7 @@ const data = [
   {
     key: "location",
     label: "Current city",
-    value: "Chicago, USA",
+    value: "redacted",
   },
 ];
 

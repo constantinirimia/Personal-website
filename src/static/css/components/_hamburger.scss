@@ -4,8 +4,14 @@
   margin-top: 0;
 }
 
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
 .menu-hover {
- padding: 0 1em;
+  padding: 0 1em;
+  color: _palette(accent);
+  cursor: pointer;
 }
 
 .menu-hover:hover {

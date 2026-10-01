@@ -1,72 +1,159 @@
-/* Skills */
-
-.skills .title {
-  text-align: center;
+.skills {
+  margin-bottom: 2.5em;
 }
 
-.skill-button-container {
-  margin: 1.5em 0;
-  text-align: center;
+.skills-lede {
+  max-width: 38em;
+  color: _palette(fg-light);
+  margin: 0.4em 0 1.4em;
 }
 
-.skillbutton {
+.stack-shell {
+  display: grid;
+  grid-template-columns: 14em 1fr;
+  gap: 0;
+  border: 1px solid _palette(border);
+  background: rgba(8, 14, 18, 0.55);
+  min-height: 22em;
+}
+
+.stack-nav {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid _palette(border);
+}
+
+.stack-nav__item {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid _palette(border);
   box-shadow: none;
-  outline: none;
-}
-
-.skillbutton-active {
-  box-shadow: inset 0 0 0 1px _palette(accent);
-  color: _palette(accent) !important;
-}
-
-.skillbar {
-  position: relative;
-  display: block;
-  margin-bottom: 15px;
+  border-radius: 0;
+  color: _palette(fg);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15em;
+  font-family: _font(family);
+  font-size: 0.92em;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.3;
+  height: auto;
+  padding: 0.85em 1em;
+  text-align: left;
+  text-transform: none;
   width: 100%;
-  background: #eee;
-  height: 35px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -webkit-transition: 0.4s linear;
-  -moz-transition: 0.4s linear;
-  -ms-transition: 0.4s linear;
-  -o-transition: 0.4s linear;
-  transition: 0.4s linear;
-  -webkit-transition-property: width, background-color;
-  -moz-transition-property: width, background-color;
-  -ms-transition-property: width, background-color;
-  -o-transition-property: width, background-color;
-  transition-property: width, background-color;
+  white-space: normal;
+  box-shadow: none !important;
+
+  &:hover,
+  &:hover {
+    color: _palette(accent) !important;
+    background: rgba(93, 255, 176, 0.06);
+    box-shadow: none;
+  }
+
+  &.is-active {
+    color: _palette(fg-bold) !important;
+    background: rgba(93, 255, 176, 0.1);
+    box-shadow: inset 2px 0 0 _palette(accent);
+  }
 }
 
-.skillbar-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-weight: bold;
-  font-size: 13px;
-  color: #fff;
-  background: #6adcfa;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+.stack-nav__id {
+  font-family: _font(family-fixed);
+  font-size: 0.62em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: _palette(accent);
 }
 
-.skillbar-title span {
-  display: block;
-  background: rgba(0, 0, 0, 0.1);
-  padding: 0 20px;
-  height: 35px;
-  line-height: 35px;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+.stack-panel {
+  padding: 1.4em 1.5em 1.6em;
+}
+
+.stack-panel__prompt {
+  font-family: _font(family-fixed);
+  color: _palette(accent);
+  font-size: 0.78em;
+  margin-bottom: 0.75em;
+}
+
+.stack-panel h4 {
+  font-family: _font(family);
+  font-size: 1.35em;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  color: _palette(fg-bold);
+  margin-bottom: 0.4em;
+}
+
+.stack-panel p {
+  color: _palette(fg-light);
+  max-width: 36em;
+}
+
+.stack-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding: 0;
+  margin: 1.2em 0 0;
+
+  li {
+    font-family: _font(family-fixed);
+    font-size: 0.78em;
+    padding: 0.45em 0.7em;
+    border: 1px solid _palette(border);
+    color: _palette(fg-bold);
+    background: rgba(0, 0, 0, 0.25);
+  }
+}
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0 0;
+
+  li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.85em;
+    padding: 0.65em 0;
+    border-bottom: 1px solid _palette(border);
+    font-size: 1em;
+  }
+}
+
+.cert-list__id {
+  font-family: _font(family-fixed);
+  font-size: 0.68em;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: _palette(accent);
+  min-width: 2.8em;
+}
+
+@include breakpoint(medium) {
+  .stack-shell {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .stack-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: 0;
+    border-bottom: 1px solid _palette(border);
+  }
+
+  .stack-nav__item {
+    width: auto;
+    flex: 1 1 8em;
+    border-right: 1px solid _palette(border);
+  }
 }

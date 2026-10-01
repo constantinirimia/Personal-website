@@ -6,25 +6,34 @@
     top: -10em;
   }
 
+  .link-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em 1.25em;
+  }
+
   .link-container h4 {
     text-decoration: none;
     border-bottom: none;
     display: inline;
+    margin: 0;
 
     a {
-      padding: 4em;
-      padding-top: 00em;
+      padding: 0;
       margin: 0;
+      font-family: _font(family-fixed);
     }
   }
 
   .courses {
-    padding-top: 3em;
+    padding-top: 2em;
+
     .title {
-      text-align: center;
+      text-align: left;
     }
+
     .course-list {
-      text-align: center;
+      text-align: left;
 
       h4 {
         white-space: nowrap;
@@ -33,54 +42,34 @@
   }
 
   .skills {
-    font-size: large;
-    font-family: "Times New Roman", Times, serif;
-    font-style: inherit;
+    margin-top: 0;
+    margin-bottom: 3em;
+    color: _palette(fg);
 
-    margin-top: 0em;
-    margin-bottom: 5em;
-    color: blue;
     .title {
-      text-align: center;
-      color:double-button p {
-        font-size: 0.9em;
-        color: blue;
-      }
+      text-align: left;
     }
   }
+
   .certifications {
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding: 1.5em 0 2em;
+    margin: 1em 0;
+    font-size: 0.95em;
 
-    margin-top: 4em;
-    margin-bottom: 9em;
-    margin: 2em 0;
-    font-family: "Times New Roman", Times, serif;
-
-    font-size: 0.9em;
-    font-weight: 400;
     .title {
-      text-align: center;
-      font-size: large;
+      text-align: left;
     }
   }
 }
 
 .education {
-  padding-top: 4em;
-  padding-bottom: 4em;
-  font-size: large;
-  margin-top: 6em;
-  margin-bottom: 9em;
-  margin: 2em 0;
-  .title {
-    text-align: center;
-  }
-  .degree {
-    text-align: center;
-  }
+  padding: 1.5em 0;
+  margin: 1em 0;
+
+  .title,
+  .degree,
   .school {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -94,37 +83,37 @@
   }
 
   .degree {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.35em;
     text-transform: none;
-    font-family: "Times New Roman", Times, serif;
-
-    font-size: 0.9em;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    margin-top: -1em;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: _palette(fg-bold);
   }
 
   .school {
     text-transform: none;
-    padding-top: 0.3em;
+    padding-top: 0.2em;
     margin-bottom: 1em;
+    color: _palette(fg-light);
+    font-family: _font(family-fixed);
+    font-size: 0.85em;
   }
 }
 
 .courses .course-number {
-  font-family: "Times New Roman";
+  font-family: _font(family-fixed);
   display: inline;
+  color: _palette(accent);
 }
+
 .courses .course-name {
   display: inline;
-  font-family: "Times New Roman", Times, serif;
-
-  font-size: 0.9em;
+  font-size: 0.95em;
   font-weight: 400;
-  letter-spacing: 0.1em;
-  line-height: 2.5;
-  margin-top: -1em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  line-height: 2;
+  text-transform: none;
 }
 
 .courses ul li {
@@ -133,7 +122,6 @@
 
 .course-dot {
   display: inline;
-  // display: none;
 }
 
 @include breakpoint(small) {

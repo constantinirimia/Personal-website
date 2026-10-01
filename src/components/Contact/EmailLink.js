@@ -2,13 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 
 const messages = [
   "",
-  "Hi, I am Constantin! I am a software engineer with a deep passion for " +
-    "Artificial Intelligence and Machine Learning. I'm always on the lookout for " +
-    "exciting new ideas to collaborate on, so if you have any, " +
-    "please don't hesitate to get in touch with me. I'm open to discussing anything " +
-    "related to my areas of expertise, and I'm always happy to help in any way I can. " +
-    "Feel free to click on any of these icons below to connect with me and start networking! " +
-    "Talk to you soon! ",
+  "If the problem is messy, high-stakes, or sitting at the edge of what a model " +
+    "should be allowed to do in production — write me. Same if you just want to talk " +
+    "airplanes. cirimia100@gmail.com, or pick a channel below.",
 ];
 
 const useInterval = (callback, delay) => {
@@ -25,18 +21,18 @@ const useInterval = (callback, delay) => {
       }, delay);
       return () => clearInterval(id);
     }
-    return () => {}; // pass linter
+    return () => {};
   }, [delay]);
 };
 
 const EmailLink = () => {
   const hold = 1;
-  const delay = 13;
+  const delay = 16;
 
-  const [idx, updateIter] = useState(0); // points to current message
+  const [idx, updateIter] = useState(0);
   const [message, updateMessage] = useState(messages[idx]);
-  const [char, updateChar] = useState(messages[idx].length); // points to current char
-  const [isActive, setIsActive] = useState(true); // disable when all messages are printed
+  const [char, updateChar] = useState(messages[idx].length);
+  const [isActive, setIsActive] = useState(true);
 
   useInterval(
     () => {
@@ -58,11 +54,9 @@ const EmailLink = () => {
   );
 
   return (
-    <div
-      className="textarea"
-      style={{ fontFamily: "Hanalei Fill", fontSize: 20 }}
-    >
+    <div className="textarea">
       <span>{message}</span>
+      {isActive ? <span className="prompt__cursor" /> : null}
     </div>
   );
 };

@@ -1,7 +1,122 @@
-// About page (/about)
-
 #stats {
   table {
     width: 100%;
+    font-family: _font(family-fixed);
+    font-size: 0.82em;
+  }
+
+  td,
+  th {
+    color: _palette(fg);
+  }
+}
+
+.telemetry__intro {
+  max-width: 40em;
+  color: _palette(fg-light);
+  margin-bottom: 1.5em;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85em;
+  margin-bottom: 1.5em;
+}
+
+.metric-card {
+  border: 1px solid _palette(border);
+  background: rgba(8, 14, 18, 0.55);
+  padding: 1em 1.1em 1.15em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+
+  strong {
+    font-family: _font(family-fixed);
+    font-size: 1.35em;
+    color: _palette(fg-bold);
+    letter-spacing: 0.02em;
+    font-weight: 500;
+  }
+
+  span {
+    color: _palette(fg-light);
+    font-size: 0.85em;
+  }
+}
+
+.metric-card__id {
+  font-family: _font(family-fixed);
+  font-size: 0.65em !important;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: _palette(accent) !important;
+}
+
+.proc-table {
+  border: 1px solid _palette(border);
+  background: rgba(8, 14, 18, 0.55);
+  overflow: hidden;
+}
+
+.proc-table__chrome {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0.65em 1em;
+  border-bottom: 1px solid _palette(border);
+  font-family: _font(family-fixed);
+  font-size: 0.72em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: _palette(fg-light);
+}
+
+.proc-table__pulse {
+  color: _palette(accent);
+}
+
+.proc-table table {
+  margin: 0;
+  border-collapse: collapse;
+}
+
+.proc-table th {
+  font-size: 0.68em;
+  letter-spacing: 0.12em;
+  color: _palette(fg-light);
+  padding: 0.7em 1em;
+}
+
+.proc-table td {
+  padding: 0.7em 1em;
+  border-top: 1px solid _palette(border);
+  vertical-align: top;
+}
+
+.proc-status {
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+}
+
+.proc-status--active,
+.proc-status--running,
+.proc-status--vfr {
+  color: _palette(accent);
+}
+
+.proc-status--wait,
+.proc-status--hold {
+  color: #febc2e;
+}
+
+@include breakpoint(small) {
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proc-table {
+    overflow-x: auto;
   }
 }

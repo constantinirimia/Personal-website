@@ -1,39 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Main from "../layouts/Main";
 
-import Education from "../components/Resume/Education";
 import Skills from "../components/Resume/Skills";
-import Courses from "../components/Resume/Courses";
-
-import courses from "../data/resume/courses";
-import degrees from "../data/resume/degrees";
-import { skills, categories } from "../data/resume/skills";
-import Certifications from "../components/Resume/Certifications";
-
-const sections = ["Skills", "Certifications", "Education", "courses"];
+import stack from "../data/resume/skills";
 
 const Resume = () => (
-  <Main title="SKILLS" description="Constantin IRIMIA'">
+  <Main title="Stack" description="Constantin Irimia — languages, services, data, and runtime">
     <article className="post" id="resume">
       <header>
         <div className="title">
-          <h2 data-testid="heading">SKILLS</h2>
-
-          <div className="link-container">
-            {sections.map((sec) => (
-              <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
-              </h4>
-            ))}
-          </div>
+          <p className="prompt">$ ls ./stack</p>
+          <h2 data-testid="heading">Stack</h2>
+          <p>
+            How I actually ship: languages, services, data, and the runtime
+            underneath.
+          </p>
         </div>
       </header>
-      <Skills skills={skills} categories={categories} />
-      <Certifications />
-      <Education data={degrees} />
-      <Courses data={courses} />
+      <Skills stack={stack} />
     </article>
   </Main>
 );

@@ -13,8 +13,16 @@ body {
   }
 }
 
+html {
+  background: #06090c;
+}
+
 body {
-  background: rgb(238, 237, 237);
+  background: #06090c;
+  background-image: radial-gradient(ellipse at top, #142018 0%, #06090c 55%);
+  color: _palette(fg);
+  min-height: 100vh;
+
   &.is-loading {
     *,
     *:before,
@@ -23,4 +31,14 @@ body {
       @include vendor("transition", "none !important");
     }
   }
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+::selection {
+  background: rgba(93, 255, 176, 0.28);
+  color: #06110b;
 }

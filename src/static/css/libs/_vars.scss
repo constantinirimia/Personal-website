@@ -21,36 +21,37 @@ $size: (
 // Font.
 $font: (
   family: (
-    "Source Sans Pro",
+    "IBM Plex Sans",
     Helvetica,
     sans-serif,
   ),
   family-fixed: (
+    "IBM Plex Mono",
     "Courier New",
     monospace,
   ),
   family-heading: (
-    "Raleway",
+    "IBM Plex Sans",
     Helvetica,
     sans-serif,
   ),
   weight: 400,
-  weight-bold: 700,
-  weight-heading: 400,
-  weight-heading-bold: 800,
-  weight-heading-extrabold: 900,
-  kerning-heading: 0.25em,
+  weight-bold: 600,
+  weight-heading: 500,
+  weight-heading-bold: 600,
+  weight-heading-extrabold: 700,
+  kerning-heading: 0.04em,
 );
 
-// Palette.
+// Palette — Operator Console
 $palette: (
-  bg: #ffffff,
-  bg-alt: #f4f4f4,
-  fg: #646464,
-  fg-bold: #3c3b3b,
-  fg-light: #aaaaaa,
-  border: rgba(160, 160, 160, 0.3),
-  border-bg: rgba(160, 160, 160, 0.075),
-  border-alt: rgba(160, 160, 160, 0.65),
-  accent: #2e59ba,
+  bg: #10161d,
+  bg-alt: #0b1015,
+  fg: #c3cfd8,
+  fg-bold: #edf4f7,
+  fg-light: #7b8b97,
+  border: rgba(93, 255, 176, 0.16),
+  border-bg: rgba(93, 255, 176, 0.05),
+  border-alt: rgba(93, 255, 176, 0.4),
+  accent: #5dffb0,
 );

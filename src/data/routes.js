@@ -1,7 +1,7 @@
 const routes = [
   {
     index: true,
-    label: "Constantin Irimia",
+    label: "cirimia // pic",
     path: "/",
   },
   {
@@ -9,20 +9,9 @@ const routes = [
     path: "/about",
   },
   {
-    label: "Skills",
-    path: "/skills",
-  },
-  {
-    label: "Fun Stats",
-    path: "/stats",
-  },
-  {
-    label: "Blog",
-    path: "/blog",
-  },
-  {
     label: "Contact",
     path: "/contact",
+    command: "freq",
   },
 ];
 

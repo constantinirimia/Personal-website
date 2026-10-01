@@ -8,7 +8,10 @@
   max-width: 100%;
   opacity: 1;
   padding: (_size(section-spacing) * 1.5);
+  padding-top: 5.5em;
   width: 90em;
+  position: relative;
+  z-index: 1;
 
   body.is-menu-visible & {
     opacity: 0.15;
@@ -23,7 +26,8 @@
   }
 
   @include breakpoint(small) {
-    padding: _size(section-spacing-small);
+    padding: 4.5em 1em 1.5em;
+    width: 100%;
   }
 
   body.single & {
