@@ -24,7 +24,7 @@ const getRows = (courses) =>
 const Courses = ({ data }) => (
   <div className="courses">
     <div className="title">
-      <div class="link-to" id="courses"></div>
+      <div className="link-to" id="courses" />
       <h3>Courses</h3>
     </div>
     <ul className="course-list">{getRows(data)}</ul>

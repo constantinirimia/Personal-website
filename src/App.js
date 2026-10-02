@@ -1,20 +1,14 @@
 import React, { Suspense, lazy } from "react";
-console.log(React.version);
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Main from "./layouts/Main"; // fallback for lazy pages
-import "./static/css/main.scss"; // All of our styles
-//import BlogPost1 from "../pages/BlogPost1";
+import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
+import Main from "./layouts/Main";
+import "./static/css/main.scss";
 
 const { PUBLIC_URL } = process.env;
 
 const About = lazy(() => import("./pages/About"));
-const BlogPost1 = lazy(() => import("./pages/BlogPost1"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Index = lazy(() => import("./pages/Index"));
 const NotFound = lazy(() => import("./pages/NotFound"));
-const Resume = lazy(() => import("./pages/Resume"));
-const Stats = lazy(() => import("./pages/Stats"));
-const Blog = lazy(() => import("./pages/Blog"));
 
 const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
@@ -22,16 +16,15 @@ const App = () => (
       <Routes>
         <Route exact path="/" element={<Index />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/skills" element={<Navigate to="/#stack" replace />} />
+        <Route path="/stats" element={<Navigate to="/" replace />} />
+        <Route path="/blog" element={<Navigate to="/" replace />} />
         <Route
           path="/blog/what-is-nlp-and-how-it-is-useful-to-us"
-          element={<BlogPost1 />}
+          element={<Navigate to="/" replace />}
         />
-        <Route path="/stats" element={<Stats />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/skills" element={<Resume />} />
-        <Route path="/blog" element={<Blog />} />
-
-        <Route component={NotFound} status={404} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
   </BrowserRouter>

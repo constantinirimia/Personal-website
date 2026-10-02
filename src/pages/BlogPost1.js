@@ -4,16 +4,16 @@ import ReactMarkdown from "react-markdown";
 import raw from "raw.macro";
 
 import Main from "../layouts/Main";
-import { Button } from "react-bootstrap";
+
 const blogPost1 = raw("../data/blogArticles/article1.md");
 
 const BlogPost1 = () => (
-  <Main title="BlogPost1">
+  <Main title="What is NLP" description="Natural Language Processing and why it matters">
     <article className="post markdown" id="blogpost1">
       <ReactMarkdown>{blogPost1}</ReactMarkdown>
-      <Button>
-        <Link to="/blog">Back to Blog</Link>
-      </Button>
+      <Link to="/blog" className="button">
+        cd ../journal
+      </Link>
     </article>
   </Main>
 );

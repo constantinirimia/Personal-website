@@ -11,9 +11,12 @@ const PageNotFound = () => (
           content="The content you are looking for cannot be found."
         />
       </Helmet>
-      <h1 data-testid="heading">Page Not Found</h1>
+      <p className="not-found__code" data-testid="heading">
+        404
+      </p>
+      <h1>going around</h1>
       <p>
-        Return <Link to="/">home</Link>.
+        Runway not in sight at this fix. Return <Link to="/">base</Link>.
       </p>
     </div>
   </HelmetProvider>

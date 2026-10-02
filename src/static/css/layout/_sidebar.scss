@@ -4,6 +4,11 @@
   margin-right: _size(section-spacing);
   min-width: 22em;
   width: 22em;
+  background: rgba(12, 18, 24, 0.72);
+  border: 1px solid _palette(border);
+  padding: 1.5em;
+  height: fit-content;
+  overflow: visible;
 
   > * {
     border-top: solid 1px _palette(border);

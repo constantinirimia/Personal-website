@@ -1,19 +1,10 @@
 import React from "react";
 
-const SkillBar = ({ data, categories }) => {
+const SkillBar = ({ data }) => {
   const { title } = data;
 
-  const buttonStyle = {
-    width: 200,
-  };
-
   return (
-    <div
-      className="box"
-      contentEditable="false"
-      style={buttonStyle}
-      disabled="true"
-    >
+    <div className="box" contentEditable="false">
       {title}
     </div>
   );

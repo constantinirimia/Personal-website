@@ -38,7 +38,7 @@ a {
     )
   );
   border-bottom: dotted 1px _palette(border-alt);
-  color: inherit;
+  color: _palette(accent);
   text-decoration: none;
 
   &:before {
@@ -47,10 +47,10 @@ a {
 
   &:hover {
     border-bottom-color: transparent;
-    color: _palette(accent) !important;
+    color: lighten(_palette(accent), 8%) !important;
 
     &:before {
-      color: _palette(accent) !important;
+      color: lighten(_palette(accent), 8%) !important;
     }
   }
 }
@@ -64,7 +64,6 @@ b {
 em,
 i {
   font-style: italic;
-  font-size: 20;
 }
 
 p {
@@ -81,9 +80,9 @@ h6 {
   font-family: _font(family-heading);
   font-weight: _font(weight-heading-bold);
   letter-spacing: _font(kerning-heading);
-  line-height: 1.65;
+  line-height: 1.25;
   margin: 0 0 (_size(element-margin) * 0.5) 0;
-  text-transform: uppercase;
+  text-transform: none;
 
   a {
     color: inherit;
@@ -92,32 +91,36 @@ h6 {
 }
 
 h2 {
-  font-size: 1.9em;
-  letter-spacing: 3.5px;
-  color: rgb(73, 67, 67);
+  font-size: 1.7em;
+  letter-spacing: 0.02em;
 }
 
 h3 {
-  font-size: 0.9em;
-  letter-spacing: 3px;
+  font-size: 1.05em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: _palette(accent);
+  font-family: _font(family-fixed);
+  font-weight: 500;
 }
 
 h4 {
-  font-size: 0.7em;
-  letter-spacing: 1px;
+  font-size: 0.85em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: _font(family-fixed);
 }
 
 h5 {
-  font-size: 0.95em;
+  font-size: 1em;
+  font-weight: 400;
+  color: _palette(fg);
+  letter-spacing: 0;
   text-transform: none;
-  font-weight: normal;
-  font-family: "Verdana";
-  color: rgb(92, 86, 86);
-  letter-spacing: 1px;
 }
 
 h6 {
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 sub {
@@ -133,20 +136,22 @@ sup {
 }
 
 blockquote {
-  border-left: solid 4px _palette(border);
+  border-left: solid 3px _palette(accent);
   font-style: italic;
   margin: 0 0 _size(element-margin) 0;
   padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4)
     _size(element-margin);
+  color: _palette(fg-light);
 }
 
 code {
-  background: _palette(border-bg);
+  background: rgba(0, 0, 0, 0.35);
   border: solid 1px _palette(border);
   font-family: _font(family-fixed);
   font-size: 0.9em;
   margin: 0 0.25em;
   padding: 0.25em 0.65em;
+  color: _palette(accent);
 }
 
 pre {

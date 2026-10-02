@@ -1,32 +1,31 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import raw from "raw.macro";
 
 import Main from "../layouts/Main";
-import { Button } from "react-bootstrap";
 
 const blogPost1 = raw("../data/blogArticles/article1.md");
 
-const BlogPreview = ({ title, description, preview, link }) => (
+const BlogPreview = ({ preview, link }) => (
   <article className="post markdown">
     <ReactMarkdown>{preview}</ReactMarkdown>
-    <br></br>
     <p>
-      <Button>
-        {" "}
-        <Link to={link}>Read More ...</Link>{" "}
-      </Button>
+      <Link to={link} className="button">
+        read more
+      </Link>
     </p>
   </article>
 );
 
 const Blog = () => (
-  <Main title="Blog" description="Read my latest blog articles">
+  <Main title="Journal" description="Notes from Constantin Irimia">
     <article className="post markdown" id="blog">
       <header>
         <div className="title">
-          <h2>BLOG</h2>
+          <p className="prompt">$ cat ./journal/*</p>
+          <h2>Journal</h2>
+          <p>Occasional writing. No growth-hacking. Just things I wanted to understand in public.</p>
         </div>
       </header>
       <BlogPreview

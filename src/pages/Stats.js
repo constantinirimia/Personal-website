@@ -1,19 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Main from "../layouts/Main";
 
 import Personal from "../components/Stats/Personal";
-import Site from "../components/Stats/Site";
 
 const Stats = () => (
-  <Main title="Fun Stats" description="Some statistics about Constantin IRIMIA">
+  <Main title="ATIS" description="Flight computer — Constantin Irimia">
     <article className="post" id="stats">
       <header>
         <div className="title">
-          <h2 data-testid="heading">
-            <Link to="/stats">Fun Stats</Link>
-          </h2>
+          <p className="prompt">$ metar ----</p>
+          <h2 data-testid="heading">ATIS</h2>
+          <p>Times in Zulu. Position is not on this frequency.</p>
         </div>
       </header>
       <Personal />
